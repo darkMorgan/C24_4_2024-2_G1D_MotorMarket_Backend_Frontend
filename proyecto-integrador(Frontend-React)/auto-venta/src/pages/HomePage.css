@@ -1,0 +1,102 @@
+/* Contenedor principal */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado a flex-start para que el contenido suba */
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Contenedor de fondo */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Capa oscura sobre la imagen */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Contenedor para el texto y botones */
+.content-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 10px; /* Reducido el margen superior */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Título dentro del recuadro */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Descripción dentro del recuadro */
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Botones dentro del recuadro */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+/* Animación para el título */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

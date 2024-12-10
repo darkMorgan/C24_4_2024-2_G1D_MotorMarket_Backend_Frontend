@@ -1,0 +1,29 @@
+/* src/App.css */
+
+html, body {
+    height: 100%;  /* Asegura que el html y el body ocupen toda la altura */
+    margin: 0;     /* Elimina márgenes predeterminados */
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Asegura que el contenedor ocupe al menos el 100% de la altura de la pantalla */
+  }
+  
+  .main-content {
+    flex: 1;  /* Asegura que el contenido ocupe el espacio disponible y empuje el footer hacia abajo */
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;  /* Esto asegura que el footer siempre se empuje hacia abajo */
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  

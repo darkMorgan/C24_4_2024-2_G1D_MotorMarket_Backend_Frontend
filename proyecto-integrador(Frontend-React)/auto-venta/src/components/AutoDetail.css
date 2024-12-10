@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.auto-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Tarjeta de detalles del auto */
+.auto-detail-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título de los detalles del auto */
+.auto-detail-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Imagen del auto */
+.auto-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Información del auto */
+.auto-info p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Estilo del precio */
+.auto-price {
+  font-size: 1.2rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Botón de compra */
+.buy-button-container {
+  margin-top: 20px;
+}
+
+.btn-buy {
+  background-color: #27ae60;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+  background-color: #2ecc71;
+}
+
+/* Mensajes de error */
+.error-message {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Mensaje de carga */
+.loading-message {
+  color: #3498db;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+/* AutoList.css */
+
+body {
+  background-color: #f4f6f8;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.card {
+  margin: 10px;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+}
